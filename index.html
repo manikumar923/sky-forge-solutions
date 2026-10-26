@@ -28,6 +28,7 @@
       <nav class="nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#programs">Learning Tracks</a>
+        <a href="#quiz">Test Yourself</a>
         <a href="#colleges">For Colleges</a>
         <a href="#approach">Our Approach</a>
         <a href="#career">Career Support</a>
@@ -130,6 +131,24 @@
       </div>
     </section>
 
+    <section id="quiz" class="section quiz-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">TEST YOURSELF</span>
+          <h2>Find your track. Check your skills.</h2>
+          <p>Two quick quizzes for students. They take a couple of minutes, run in your browser and store nothing.</p>
+        </div>
+        <div class="quiz-card" id="quiz-app">
+          <div class="quiz-tabs" role="tablist" aria-label="Choose a quiz">
+            <button type="button" role="tab" id="tab-track" aria-selected="true" aria-controls="quiz-panel" class="quiz-tab active" data-quiz="track">Find your track</button>
+            <button type="button" role="tab" id="tab-tech" aria-selected="false" aria-controls="quiz-panel" class="quiz-tab" data-quiz="tech">Quick tech check</button>
+          </div>
+          <div id="quiz-panel" class="quiz-panel" role="tabpanel" aria-live="polite"></div>
+        </div>
+        <p class="quiz-note">These quizzes are for practice and guidance only. They are not the official Sky Forge entrance assessment.</p>
+      </div>
+    </section>
+
     <section id="colleges" class="section section-light">
       <div class="container">
         <div class="section-heading">
@@ -148,7 +167,25 @@
         <div class="college-cta">
           <a class="btn btn-primary" href="https://wa.me/918885599388?text=Hi%20Sky%20Forge%20Solutions,%20we%20are%20a%20college%20and%20would%20like%20to%20receive%20your%20program%20proposal." target="_blank" rel="noopener">Request a proposal</a>
           <a class="btn btn-secondary" href="mailto:mainamdevops4@gmail.com?subject=Program%20Proposal%20Request%20-%20College">Email for a proposal</a>
+          <a class="btn btn-secondary" href="assets/Sky-Forge-College-Program-Brochure.pdf" download>Download brochure (PDF)</a>
         </div>
+        <form class="enquiry-form" id="enquiry-form" novalidate>
+          <h3>College enquiry</h3>
+          <p>Share a few details and we will get back to you. Sending opens WhatsApp or your email app with your message ready.</p>
+          <div class="form-grid">
+            <label>College name<input type="text" name="college" autocomplete="organization" required></label>
+            <label>Contact person<input type="text" name="person" autocomplete="name" required></label>
+            <label>Phone<input type="tel" name="phone" autocomplete="tel" inputmode="tel" required></label>
+            <label>Email<input type="email" name="email" autocomplete="email"></label>
+            <label>Approximate number of students<input type="number" name="students" min="1" inputmode="numeric"></label>
+            <label class="form-wide">Message (optional)<textarea name="message" rows="3"></textarea></label>
+          </div>
+          <p class="form-error" id="enquiry-error" role="alert" hidden></p>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" data-via="whatsapp">Send on WhatsApp</button>
+            <button class="btn btn-secondary" type="submit" data-via="email">Send by email</button>
+          </div>
+        </form>
       </div>
     </section>
 

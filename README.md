@@ -9,6 +9,8 @@ Responsive static website for Sky Forge Solutions.
 - Career support section
 - FAQ section
 - WhatsApp, phone and email contact actions
+- Test Yourself section: a track-finder quiz and a tech-check quiz (run in the browser, nothing stored)
+- For Colleges section with proposal buttons, brochure download and an enquiry form that opens WhatsApp or email
 - No backend or database required
 - No fixed course-duration claims on the website
 
