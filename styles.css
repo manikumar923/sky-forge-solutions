@@ -3,3 +3,10 @@
 @media(max-width:1000px){.approach-grid,.why-grid{grid-template-columns:1fr 1fr}.nav{gap:18px}}
 @media(max-width:900px){.nav{display:none;position:absolute;left:4%;right:4%;top:76px;background:#fff;padding:18px;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.nav.open{display:flex}.nav a{padding:8px}.menu-toggle{display:block}.hero-grid,.split,.contact-card,.faq-wrap{grid-template-columns:1fr}.hero{padding-top:60px}.hero-card{min-height:380px}.program-grid{grid-template-columns:1fr 1fr}.career-grid{grid-template-columns:1fr}.contact-card{padding:34px;gap:35px}.footer-wrap{flex-direction:column;align-items:flex-start}}
 @media(max-width:600px){.nav-wrap{height:72px}.brand img{width:155px}.hero h1{font-size:42px}.hero-text{font-size:16px}.hero-points{gap:16px}.section{padding:72px 0}.program-grid,.approach-grid,.why-grid{grid-template-columns:1fr}.program-card p{min-height:0}.contact-card h2{font-size:34px}.contact-card{padding:28px}.hero-card{min-height:320px}.hero-card img{width:280px}}
+
+.college-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.college-card{padding:28px;border:1px solid var(--border);border-radius:22px;background:#fff;box-shadow:0 10px 35px rgba(12,55,95,.05)}.college-card h3{font-size:19px;color:var(--navy);margin:0 0 10px}.college-card p{color:var(--muted);font-size:14px;margin:0}.college-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.contact-details strong{line-height:1.45}.footer-wrap>div:last-child{text-align:right}
+@media(max-width:900px){.college-grid{grid-template-columns:1fr 1fr}.footer-wrap>div:last-child{text-align:left}}
+@media(max-width:600px){.college-grid{grid-template-columns:1fr}}
+.program-card.wide{grid-column:1/-1}.program-card.wide p{min-height:0}.program-card.wide ul{display:flex;flex-wrap:wrap;gap:6px 34px;list-style-position:inside;padding-left:0}
+@media(max-width:900px){.program-card.wide{grid-column:auto}.program-card.wide ul{display:block;list-style-position:outside;padding-left:18px}}
+.footer #year{display:inline;margin:0;color:inherit}
