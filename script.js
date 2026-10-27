@@ -181,7 +181,7 @@ if (year) year.textContent = new Date().getFullYear();
     if (v('message')) lines.push('', v('message'));
     const body = lines.join('\n');
     if (via === 'email') {
-      window.location.href = 'mailto:mainamdevops4@gmail.com?subject=' + encodeURIComponent('College enquiry - ' + v('college')) + '&body=' + encodeURIComponent(body);
+      window.location.href = 'mailto:mk-skyforgesolutions@gmail.com?subject=' + encodeURIComponent('College enquiry - ' + v('college')) + '&body=' + encodeURIComponent(body);
     } else {
       window.open('https://wa.me/918885599388?text=' + encodeURIComponent(body), '_blank', 'noopener');
     }
