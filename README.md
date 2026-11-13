@@ -11,6 +11,7 @@ Responsive static website for Sky Forge Solutions.
 - WhatsApp, phone and email contact actions
 - Test Yourself section: a track-finder quiz and a tech-check quiz (run in the browser, nothing stored)
 - For Colleges section with proposal buttons, brochure download and an enquiry form that opens WhatsApp or email
+- B.Tech Projects: a Projects section on the homepage with one card per branch, linking to `projects.html` (branch tabs, search, WhatsApp enquiry per project). Edit the project list in `projects-data.js`.
 - No backend or database required
 - No fixed course-duration claims on the website
 

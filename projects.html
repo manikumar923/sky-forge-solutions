@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Final-year B.Tech major project ideas for CSE, ECE, EEE, Civil and Mechanical students, with guidance from Sky Forge Solutions, Hyderabad.">
+  <link rel="canonical" href="https://skyforgesolutions.org/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sky Forge Solutions">
+  <meta property="og:title" content="B.Tech Final-Year Major Projects | Sky Forge Solutions">
+  <meta property="og:description" content="Major project ideas for CSE, ECE, EEE, Civil and Mechanical final-year students.">
+  <meta property="og:url" content="https://skyforgesolutions.org/projects.html">
+  <meta property="og:image" content="https://skyforgesolutions.org/assets/sky-forge-logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#063b73">
+  <title>B.Tech Final-Year Major Projects | Sky Forge Solutions</title>
+  <link rel="icon" href="assets/sky-forge-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Sky Forge Solutions home"><img src="assets/sky-forge-logo.png" alt="Sky Forge Solutions logo"></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#programs">Learning Tracks</a>
+        <a href="projects.html" aria-current="page" class="active">Projects</a>
+        <a href="index.html#quiz">Test Yourself</a>
+        <a href="index.html#colleges">For Colleges</a>
+        <a href="index.html#career">Career Support</a>
+        <a href="index.html#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects-hero">
+      <div class="container">
+        <a class="back-link" href="index.html#projects">← Back to home</a>
+        <span class="eyebrow">B.TECH MAJOR PROJECTS</span>
+        <h1>Final-year major projects for every branch.</h1>
+        <p class="hero-text">Pick a branch to explore project ideas for CSE, ECE, EEE, Civil and Mechanical students. Found one you like? Send us an enquiry about it on WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section projects-section">
+      <div class="container">
+        <div class="branch-tabs" role="tablist" aria-label="Choose a branch" id="branch-tabs"></div>
+        <div class="projects-toolbar">
+          <div>
+            <h2 id="branch-title">All branches</h2>
+            <p id="branch-blurb" class="branch-blurb"></p>
+          </div>
+          <label class="project-search">
+            <span class="visually-hidden">Search projects</span>
+            <input type="search" id="project-search" placeholder="Search projects, e.g. IoT, AI, ETABS" autocomplete="off">
+          </label>
+        </div>
+        <p class="project-count" id="project-count" aria-live="polite"></p>
+        <div class="project-grid" id="project-grid"></div>
+        <p class="project-empty" id="project-empty" hidden>No projects match your search. Try another word, or ask us about your own idea.</p>
+
+        <div class="projects-cta">
+          <div>
+            <h3>Have your own project idea?</h3>
+            <p>Tell us your branch and idea and we will get back to you.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/918885599388?text=Hi%20Sky%20Forge%20Solutions,%20I%20am%20a%20B.Tech%20final-year%20student%20and%20would%20like%20to%20discuss%20a%20major%20project." target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <a class="btn btn-secondary" href="mailto:mk-skyforgesolutions@gmail.com?subject=B.Tech%20Major%20Project%20Enquiry">Email us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div><strong>SKY FORGE SOLUTIONS</strong><span>Transforming Students into Industry-Ready Engineers</span></div>
+      <div>© <span id="year">2026</span> Sky Forge Solutions Pvt. Ltd. All rights reserved.<br>CIN: U85499TS2026PTC211073</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="projects-data.js"></script>
+  <script src="projects.js"></script>
+</body>
+</html>
