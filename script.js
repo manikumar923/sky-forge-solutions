@@ -1,12 +1,31 @@
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
-if (toggle) {
+const closeNav = () => {
+  if (!toggle || !nav) return;
+  nav.classList.remove('open');
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.setAttribute('aria-label', 'Open navigation');
+};
+if (toggle && nav) {
   toggle.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && nav.classList.contains('open')) {
+      closeNav();
+      toggle.focus();
+    }
+  });
+  document.addEventListener('click', event => {
+    if (nav.classList.contains('open') && !nav.contains(event.target) && !toggle.contains(event.target)) closeNav();
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900) closeNav();
   });
 }
-document.querySelectorAll('.nav a').forEach(link => link.addEventListener('click', () => { nav.classList.remove('open'); if (toggle) toggle.setAttribute('aria-expanded', 'false'); }));
+document.querySelectorAll('.nav a').forEach(link => link.addEventListener('click', closeNav));
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
 
