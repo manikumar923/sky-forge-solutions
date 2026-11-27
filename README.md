@@ -32,7 +32,7 @@ The site can be deployed to Cloudflare Pages from the GitHub repository. No buil
 ## Conversion and SEO refresh
 - Homepage now presents clearer calls to action and dedicated paths for students, colleges, trainers and project teams.
 - Responsive audience cards and improved mobile navigation accessibility.
-- Updated canonical and social metadata to the planned `https://skyforge-solutions.com` domain.
+- Updated canonical and social metadata to the primary `https://skyforgesolutions.org` domain.
 - Added `robots.txt` and `sitemap.xml`; the application form is excluded from indexing.
 
-Before launch, confirm `skyforge-solutions.com` is the primary domain configured in Cloudflare Pages and update it here if the live domain differs. Configure Jotform email notifications and verify the submission destination in the Jotform account.
+Before launch, confirm `skyforgesolutions.org` is configured as the primary domain in Cloudflare Pages. Configure Jotform email notifications and verify the submission destination in the Jotform account.
