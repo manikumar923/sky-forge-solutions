@@ -6,7 +6,7 @@ if (toggle) {
     toggle.setAttribute('aria-expanded', String(open));
   });
 }
-document.querySelectorAll('.nav a').forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
+document.querySelectorAll('.nav a').forEach(link => link.addEventListener('click', () => { nav.classList.remove('open'); if (toggle) toggle.setAttribute('aria-expanded', 'false'); }));
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
 

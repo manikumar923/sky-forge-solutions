@@ -27,3 +27,15 @@ Then visit `http://localhost:8000`.
 
 ## Deployment
 The site can be deployed to Cloudflare Pages from the GitHub repository. No build command is required because this is a static HTML/CSS/JavaScript site.
+
+
+## Conversion and SEO refresh
+- Homepage now presents clearer calls to action and dedicated paths for students, colleges, trainers and project teams.
+- Dedicated pages: `courses.html`, `college-partnerships.html`, `become-trainer.html`, `projects.html` and `apply.html`.
+- Added general information pages for privacy, terms and cancellation/refunds. These starter notices require review against actual business practices and applicable law.
+- Responsive audience cards and improved mobile navigation accessibility.
+- Canonical and social metadata use the primary `https://skyforgesolutions.org` domain.
+- Added `robots.txt` and an expanded `sitemap.xml`; the application form is excluded from indexing.
+- College partnership enquiries route to the central Jotform application form. WhatsApp remains available as a quick contact channel.
+
+Before launch, confirm `skyforgesolutions.org` is configured as the primary domain in Cloudflare Pages. Configure Jotform email notifications and test an application submission. The site is static and does not include a database-backed CRM.
