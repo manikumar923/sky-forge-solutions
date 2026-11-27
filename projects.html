@@ -21,23 +21,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Sky Forge Solutions home"><img src="assets/sky-forge-logo.png" alt="Sky Forge Solutions logo"></a>
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-      <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Sky Forge Solutions home">
+        <img src="assets/sky-forge-logo.png" alt="Sky Forge Solutions">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <nav class="nav" id="primary-navigation" aria-label="Primary navigation">
         <a href="index.html#about">About</a>
         <a href="courses.html">Programs</a>
-        <a href="projects.html" aria-current="page" class="active">Projects</a>
-        <a href="index.html#quiz">Test Yourself</a>
-        <a href="college-partnerships.html">For Colleges</a>
-        <a href="index.html#career">Career Support</a>\n        <a href="become-trainer.html">For Trainers</a>
-        <a href="index.html#contact" class="nav-cta">Contact</a>
+        <a href="projects.html" class="active" aria-current="page">Projects</a>
+        <a href="college-partnerships.html">Colleges</a>
+        <a href="become-trainer.html">Trainers</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="apply.html" class="nav-cta">Apply Now</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="projects-hero">
       <div class="container">
         <a class="back-link" href="index.html#projects">← Back to home</a>
