@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /apply.html
 
-Sitemap: https://skyforge-solutions.com/sitemap.xml
+Sitemap: https://skyforgesolutions.org/sitemap.xml
